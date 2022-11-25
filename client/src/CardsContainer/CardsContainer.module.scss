@@ -1,0 +1,38 @@
+@import '../index.scss';
+
+.cards{
+  &_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  &_card{
+    background-color: $color-white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2{
+      color: $color-dark-green;
+      letter-spacing: 0.7px;
+      margin-bottom: 0;
+      padding-bottom: 5px;
+      border-bottom: 2px solid $color-dark-green;
+    }
+    a{
+      align-self: flex-end;
+      background-image: linear-gradient(to bottom right, $color-light-green, $color-gray);
+      color: $color-white;
+      padding: 10px;
+      text-decoration: none;
+      &:hover{
+        background-image: linear-gradient(to bottom right, $color-gray, $color-light-green);
+        color: $color-dark-green;
+      }
+    }
+    h5{
+      align-self: flex-end;
+    }
+  }
+}

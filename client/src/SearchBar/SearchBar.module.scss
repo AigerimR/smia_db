@@ -1,0 +1,27 @@
+@import '../index.scss';
+
+.main {
+  background-color: $color-dark-green;
+  border-radius: 10px;
+  padding: 40px 50px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.search {
+  &_input,  &_btn{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+  }
+  &_btn {
+    &:hover{
+      cursor: pointer;
+      background-color: $color-gray;
+      color: $color-white;
+    }
+  }
+}
+
